@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Survey AI Assistant",
+    "slug": "survey-ai-assistant",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.surveyai.assistant"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "نحتاج اختيار صورة سؤال الاستبيان لاستخراج النص منها.",
+          "cameraPermission": "نحتاج الكاميرا لتصوير سؤال الاستبيان واستخراج النص.",
+          "microphonePermission": false
+        }
+      ]
+    ]
+  }
+}
